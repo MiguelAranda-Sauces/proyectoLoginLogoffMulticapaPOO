@@ -12,7 +12,7 @@
     <div id="datos">
         <h3> <?php echo "Bienvenido " . $descUsuario; ?></h3>
         <?php
-        if ($numAccesos == 1) {
+        if ($numAccesos < 1) {
             echo "<h4>Es su primera conexión. Muchas gracias por confiar en nosotros.</h4>";
         } else {
             echo "<h4>Esta es su " . $numAccesos . " conexión.</h4>";
