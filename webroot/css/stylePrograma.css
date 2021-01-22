@@ -29,8 +29,6 @@ h4{
     width: 90%;
     position: relative;
     margin-bottom: 10px;
-
-    
 }
 
 .botones form{
@@ -57,3 +55,38 @@ a:nth-of-type(3) .botonEnvio{
     top: 25px;
     margin-bottom: 20px;
 }
+
+.campos{
+    margin-top:25px;
+}
+
+a {
+    position: absolute !important;
+    padding-top: 2%;
+}
+
+.boton {
+    top: 75px !important;
+}
+
+.botonSend a{
+    padding-top: 0.1vw !important;
+}
+
+.botonEnvio{
+    padding: 0px !important;
+    height: 34px !important;
+}
+
+.git{
+    top:0px!important;
+}
+
+footer{
+    height: 4vw;
+}
+
+footer a{
+    padding-top: 1%;
+}
+

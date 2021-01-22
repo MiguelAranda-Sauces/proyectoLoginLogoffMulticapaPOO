@@ -12,9 +12,9 @@
     <div id="datos">
         <h3> <?php echo "Bienvenido " . $descUsuario; ?></h3>
         <?php
-        if ($numAccesos < 1) {
+        if ($numAccesos == 1) { //si el valor devuelta de la consulta es igual a 1 entonces sera su primer login
             echo "<h4>Es su primera conexión. Muchas gracias por confiar en nosotros.</h4>";
-        } else {
+        } else { //en caso contrario mostrara el número de logeos que a echo ese usuario y cual fue su ultima fecha de logeo
             echo "<h4>Esta es su " . $numAccesos . " conexión.</h4>";
             echo "<h4>Su ultima conexión fue el " . date('d/m/Y H:i:s', $ultimaConexion) . ".</h4>";
         }

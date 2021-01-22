@@ -1,9 +1,26 @@
 <?php
 
-//Creamos la clase DBPDO
-//Creamos la funciones ejecutarConsulta que es publica y estatica a la cual le pasaermos la sentencia SQL (consulta preparada) y los parametros para esta
-
+/**
+ * Class DBPDO
+ *
+ * Clase que se va a utilizar para crear un objeto de la clase DBPDO
+ * 
+ * @author Cristina Nuñez y Javier Nieto
+ * @since 1.0
+ * @copyright 16-01-2021
+ * @author version 1.1 Miguel Angel Aranda Garcia
+ * @since 1.1 20/01/2021 Documentación
+ * @version 1.1
+ */
 class DBPDO {
+
+    /**
+     * funcion ejecutarConsulta usada para lanzar todas las consultas necesitas contra la base de datos de forma instanciada y segura
+     * 
+     * @param type $sentenciaSQL consulta SQL pasada como parametro para realizar la consulta
+     * @param type $parametros valores pasados como parametros necesarios para poder realizar correctametne la consulta
+     * @return type $consulta devolveremos el resultado de la consulta como un objeto PDO
+     */
     public static function ejecutaConsulta($sentenciaSQL, $parametros) {
         try {
             $miDB = new PDO(DNS, USER, PASSWORD); //iniciamos la session con la bd
@@ -23,4 +40,5 @@ class DBPDO {
         //en caso de que todo sea correcto hace el return del resultado de la consulta
         return $consulta;
     }
+
 }

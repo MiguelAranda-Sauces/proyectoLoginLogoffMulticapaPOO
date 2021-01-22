@@ -7,9 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="webroot/css/style_1.css">
         <?php
-     
         if ($vistaEnCurso == 'view/vInicio.php') {
             echo '<link rel = "stylesheet" type = "text/css" href = "webroot/css/stylePrograma.css">';
+        } else if ($vistaEnCurso === 'view/vRegistro.php') {
+            echo '<link rel = "stylesheet" type = "text/css" href = "webroot/css/styleRegistro.css">';
         } else {
             echo '<link rel = "stylesheet" type = "text/css" href = "webroot/css/styleLogin.css">';
         }
@@ -21,8 +22,8 @@
         ?>
         <footer>
             <div class="pie">
-                <a href="../../index.html" class="nombre">Miguel Ángel Aranda García</a>
-                <a href="https://github.com/MiguelAranda-Sauces" class="git" ><img class="git" src="webroot/media/img/git.png"></a>
+                <a href="../../index.html" class="nombre">Miguel Ángel Aranda García <br> 19/01/2021</a>
+                <a href="https://github.com/MiguelAranda-Sauces" target="_blank" class="git" ><img class="git" src="webroot/media/img/git.png"></a>
             </div>
 
         </footer>
