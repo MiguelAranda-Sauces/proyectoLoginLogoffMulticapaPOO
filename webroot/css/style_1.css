@@ -256,7 +256,7 @@ footer{
     left:39%;
 }
 
-.git{
+.git,.phpdoc{
     width: 50px;
     height: 50px;
     position: relative;
@@ -264,6 +264,10 @@ footer{
     top:6px;
 }
 
+.phpdoc{
+    left: 25%;
+    top:2%;
+}
 .pie{
     height: 100%;
     width: 100%;

@@ -24,6 +24,7 @@
             <div class="pie">
                 <a href="../../index.html" class="nombre">Miguel Ángel Aranda García <br> 19/01/2021</a>
                 <a href="https://github.com/MiguelAranda-Sauces" target="_blank" class="git" ><img class="git" src="webroot/media/img/git.png"></a>
+                <a href="/documentacion/index.html" target="_blank" class="phpdoc" ><img class="git" src="webroot/media/img/phpdoc.png"></a>
             </div>
 
         </footer>
